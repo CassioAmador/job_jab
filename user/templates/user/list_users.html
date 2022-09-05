@@ -1,0 +1,15 @@
+<!-- templates/search_results.html -->
+<form action="" method="post"> {% csrf_token %}
+    <input type="submit" name='csrfmiddlewaretoken' value="Adicionar Usuário" />
+</form>
+
+<h1>Usuários Cadastrados</h1>
+
+<ul>
+  {% for user in object_list %}
+    <li>
+    {{user.username}},    {{user.email}}
+
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,11 @@
+<!-- templates/search_results.html -->
+<h1>Search Results</h1>
+
+<ul>
+  {% for job in object_list %}
+    <li>
+    {{job.doc_id}},    {{job.employer_name}},    {{job.date_posted}},    {{job.employment_type}},    {{job.location}},    {{job.title}},    {{job.description}}
+
+    </li>
+  {% endfor %}
+</ul>

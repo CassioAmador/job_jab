@@ -13,7 +13,7 @@ def login(request):
 
         if user is not None:
             auth.login(request, user)
-            return redirect('job_search:search_results')
+            return redirect('vacancy:search_results')
         else:
             messages.info(request, 'Invalid Username or Password')
             return redirect('authentication:login')

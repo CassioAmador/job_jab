@@ -1,8 +1,7 @@
 
-# Job Jab
+# API Job Jab
 
 Uma API para busca de vagas de trabalho
-
 
 
 
@@ -22,10 +21,16 @@ O arquivo com as vagas "ofertas.csv" deve ser colocado dentro da pasta raiz do p
 Após, rodar:
 
 ```shell
-$ python3 job_search/job_list.py
+$ python3 vacancy/job_list.py
 ```
 
 Que irá gerar um arquivo no formato json.
+
+Após, para carregar as vagas, rodar
+
+```shell
+python manage.py loaddata ofertas.json
+```
 
 Rodar no shell:
 
@@ -44,3 +49,11 @@ Para ver trabalhos, logar em:
 http://localhost:8000/login
 
 com login e senha também fornecidas pelo autor.
+
+Para listar usuários:
+
+http://localhost:8000/user
+
+Dentro da página, tem um botão para adicionar novos usuários, mas não funciona por causa do CSRF
+
+
