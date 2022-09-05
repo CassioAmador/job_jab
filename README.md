@@ -16,6 +16,12 @@ Uma API para busca de vagas de trabalho
 
 ## Uso/Exemplos
 
+O ambiente deve ser iniciado com:
+
+```shell
+$ source env/bin/activate
+```
+
 O arquivo com as vagas "ofertas.csv" deve ser colocado dentro da pasta raiz do projeto.
 
 Após, rodar:
