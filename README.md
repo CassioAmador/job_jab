@@ -29,7 +29,7 @@ O arquivo com as vagas "ofertas.csv" deve ser colocado dentro da pasta raiz do p
 Após, rodar:
 
 ```shell
-$ python3 vacancy/job_list.py
+$ python vacancy/job_list.py
 ```
 
 Que irá gerar um arquivo no formato json.
@@ -40,17 +40,22 @@ Após, para carregar as vagas, rodar
 python manage.py loaddata ofertas.json
 ```
 
-Rodar no shell:
+Rodar no shell, para criar superusuário:
 
 ```shell
-$ python3 manage.py runserver
+$ python manage.py createsuperuser --username=USERNAME --email=EMAIL
+```
+e depois:
+
+```shell
+$ python manage.py runserver
 ```
 
 Para gerenciar trabalhos e usuários:
 
 http://localhost:8000/admin
 
-Login: admin e senha: ROOT. Entrar para criar um usuário, para poder testar o link abaixo.
+Entrar com conta de superusuário criada acima, para criar um usuário comum, e poder testar o link abaixo.
 
 Para ver trabalhos, logar em:
 
